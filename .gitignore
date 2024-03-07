@@ -1,52 +1,57 @@
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+#include <stdio.h>
+float Capacity[4];
+int Model[2];
+int main()
+{  
+	Capacity[0]=0.8;
+	Capacity[1]=2;
+	Capacity[2]=3;
+	Capacity[3]=4;
+	Capacity[4]=5;
+	Model[0]=1;
+	Model[1]=3;
+	Model[2]=5;
+   	int i,j,k,num=0; 
+	for(i=0;i<=17;i++)
+	{
+		j=j+10;
+		
+		for(k=0;k<=4;k++)
+		{
+		
+			if(Capacity[k]=0.8)
+			{
+				num=num+1;
+		printf("可能的组合为:%d；实际药液容量:%.1f, 注射器容量:%d, 注射次数%d ,单次注射剂量为%.2f\r\n",num,Capacity[k],Model[0],j,Capacity[k]/j);
+			}
+			 if(Capacity[k]=2)
+			{
+				 num=num+1;
+		printf("可能的组合为:%d；实际药液容量:%.1f, 注射器容量:%d, 注射次数%d ,单次注射剂量为%.2f\r\n",num,Capacity[k],Model[1],j,Capacity[k]/j);
+			}
+			 if(Capacity[k]=3)
+			{
+				 num=num+1;
+		printf("可能的组合为:%d；实际药液容量:%.1f, 注射器容量:%d, 注射次数%d ,单次注射剂量为%.2f\r\n",num,Capacity[k],Model[1],j,Capacity[k]/j);
+			}
+		 if(Capacity[k]=4)
+			{
+			 num=num+1;
+		printf("可能的组合为:%d；实际药液容量:%.1f, 注射器容量:%d, 注射次数%d ,单次注射剂量为%.2f\r\n",num,Capacity[k],Model[2],j,Capacity[k]/j);
+			}
+		if(Capacity[k]=5)
+			{
+			num=num+1;
+		printf("可能的组合为:%d；实际药液容量:%.1f, 注射器容量:%d, 注射次数%d ,单次注射剂量为%.2f\r\n",num,Capacity[k],Model[2],j,Capacity[k]/j);
+			}
+			
+		}
+		
+	}
+	
+ 
+			
+  	  printf("一共有%d种可能的组合结果",num);
+   
+   	return 0;
+}
