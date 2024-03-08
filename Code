@@ -18,30 +18,30 @@ int main()
 		
 		for(k=0;k<=4;k++)
 		{
-		
-			if(Capacity[k]=0.8)
+		     num=num+1;
+			if(k==0)
 			{
-				num=num+1;
+				
 		printf("可能的组合为:%d；实际药液容量:%.1f, 注射器容量:%d, 注射次数%d ,单次注射剂量为%.2f\r\n",num,Capacity[k],Model[0],j,Capacity[k]/j);
 			}
-			 if(Capacity[k]=2)
+			if(k==1)
 			{
-				 num=num+1;
+				 
 		printf("可能的组合为:%d；实际药液容量:%.1f, 注射器容量:%d, 注射次数%d ,单次注射剂量为%.2f\r\n",num,Capacity[k],Model[1],j,Capacity[k]/j);
 			}
-			 if(Capacity[k]=3)
+			if(k==2)
 			{
-				 num=num+1;
+				 
 		printf("可能的组合为:%d；实际药液容量:%.1f, 注射器容量:%d, 注射次数%d ,单次注射剂量为%.2f\r\n",num,Capacity[k],Model[1],j,Capacity[k]/j);
 			}
-		 if(Capacity[k]=4)
+		 	if(k==3)
 			{
-			 num=num+1;
+			 
 		printf("可能的组合为:%d；实际药液容量:%.1f, 注射器容量:%d, 注射次数%d ,单次注射剂量为%.2f\r\n",num,Capacity[k],Model[2],j,Capacity[k]/j);
 			}
-		if(Capacity[k]=5)
+			if(k==4)
 			{
-			num=num+1;
+			
 		printf("可能的组合为:%d；实际药液容量:%.1f, 注射器容量:%d, 注射次数%d ,单次注射剂量为%.2f\r\n",num,Capacity[k],Model[2],j,Capacity[k]/j);
 			}
 			
